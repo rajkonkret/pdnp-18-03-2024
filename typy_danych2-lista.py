@@ -78,3 +78,40 @@ print(id(lista))  # 1596402618752
 print(id(lista2))  # 1596402618752
 print(lista3)
 print(id(lista3))  # 1596402940032
+
+liczby = [54, 999, 34, 22, 64.34, 687]
+# liczby = [54, 999, 34, 22, 64.34, 687, "ABC"]
+# bład przy sortowaniu TypeError: '<' not supported between instances of 'str' and 'float'
+print(liczby)  # [54, 999, 34, 22, 64.34, 687]
+
+liczby.sort()  # [54, 999, 34, 22, 64.34, 687] - dla samych liczb
+
+lista_osoby = ['radek', 'ola', 'agata']
+lista_osoby.sort()
+print(lista_osoby)  # ['agata', 'ola', 'radek']
+# W przeciwieństwie do tekstów przy działąniach na listach z reguły nadpisujemy oryginalną kolekcję
+
+lista_osoby.sort(reverse=True)  # sortowanie i odwrócenie kolejności
+print(lista_osoby)  # ['radek', 'ola', 'agata']
+
+lista_osoby.reverse()  # odwrócenie kolejności bez sortowania
+print(lista_osoby)  # ['agata', 'ola', 'radek']
+
+liczby[3] = 6666
+liczby.pop(3)
+print(liczby)
+
+liczby.remove(54)
+print(liczby)  # [22, 34, 687, 999]
+
+tekst = 'Python'
+lista1 = [tekst]
+print(lista1)  # ['Python']
+
+# rozpakowanie sekwencji
+lista2 = list(tekst)  # list() - rzutowanie na liste
+print(lista2)  # ['P', 'y', 't', 'h', 'o', 'n']
+
+krotka = tuple(lista3)  # tuple() - rutowanie na krotkę (tuplę)
+print(type(krotka))  # <class 'tuple'>
+print(krotka)  # ('Radek', 'Katarzyna', 'Paulina', 'Magda')
