@@ -48,3 +48,53 @@ print(f"Sprawdzenie zmiennej {temp} {wiek}")
 print(f"""
 {temp}
     {wiek}""")
+
+# typ logiczny
+# True, False
+czy_znasz_python = True
+print(czy_znasz_python)  # True
+print(type(czy_znasz_python))  # <class 'bool'>
+print(int(czy_znasz_python))  # 1
+print(int(False))  # 0
+print(bool(1))  # True
+print(bool(0))  # False
+print(bool(-10))  # True
+print(bool("Radek"))  # True
+
+print(bool(''))  # False
+print(bool(None))  # False
+# None - nic, stan nieokreslony -> null
+
+# and - i
+print(True and True)  # True
+print(True and False)  # False
+print(False and True)  # False
+print(False and False)  # False
+
+# or - lub
+print(True or True)  # True
+print(True or False)  # True
+print(False or True)  # True
+print(False or False)  # False
+
+# not - negacja
+print(not True)  # False
+print(not False)  # True
+
+x = 1
+print(not x == 1)  # False, == porównanie
+
+a = 8
+b = 7
+print(f"Porównaie {a} > {b}", a > b)
+print(f"Porównaie {a} < {b}", a < b)
+print(f"Porównaie {a} == {b}", a == b)  # == porównanie
+print(f"Porównaie {a} >= {b}", a >= b)
+print(f"Porównaie {a} != {b}", a != b)  # != rózne
+print(f"Porównaie {a} <= {b}", a <= b)
+# Porównaie 8 > 7 True
+# Porównaie 8 < 7 False
+# Porównaie 8 == 7 False
+# Porównaie 8 >= 7 True
+# Porównaie 8 != 7 True
+# Porównaie 8 <= 7 False
