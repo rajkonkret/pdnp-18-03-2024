@@ -55,10 +55,22 @@ print(empty_dict)  # {}
 
 my_dict = dictionary.copy()  # kopiowanie elemntów
 print(my_dict)  # {'x': 2, 'y': 2, 'z': 3}
-# odp = input("Podaj liczbę")  # input zwraca stringa
-# print(odp)
-# print(type(odp))  # <class 'str'>
+odp = input("Podaj liczbę")  # input zwraca stringa
+print(odp)
+print(type(odp))  # <class 'str'>
 
+# input zawsze zwraca stringa, musimy zamienic na liczby int() lub float()
 a = input("podaj pierwszą liczbę")
 b = input("podaj druga liczbę")
-print(a + b)
+c = float(input("podaj liczbę c: "))
+print(a + b)  # 12  - konkatenacja - łaczenie tekstów - kalkulator dziala źle bo na tekstach a nie liczbach
+print(int(a) + float(b))  # 3.0 zamieniamy na liczby by wynik był liczbą
+print("Liczba c:", c)  # Liczba c: 22.0
+
+# Napisać program słownik
+# pobrac słowo od uzytkownika
+# wypisac polskie tłumaczenie tego słowa
+dict_words = {'name': 'imie', 'castle': 'zamek', 'water': 'woda'}
+print("Słowka dostępne", dict_words.keys())
+odp = input("Podaj słowko do przetłumaczenia")  # str()
+print(dict_words[odp.lower().replace(" ", "")])
