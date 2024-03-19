@@ -43,3 +43,7 @@ while True:
         print("Gdy nie ma błedu")
     finally:
         print("Zawsze")
+
+while True:
+    odp = input("Podaj wyrażenie")
+    print(eval(odp))  # eval() - zwraca wynik podanego wyrażenia w stringu
