@@ -5,7 +5,7 @@
 # pobrac liczby +
 # wyswietlic wynik +
 # obsłużyc wyjątki +
-
+# praca domowa - przerobic na match case
 while True:
     print(f"""
 1. Dodawanie
