@@ -45,3 +45,33 @@ print(tuple_names.index("Tomek"))  # index 1 - indeks elementu
 # sortowanie sorted()
 print(sorted(tuple_names))  # sortowanie zwróci listę ['Bartek', 'Radek', 'Tomek', 'Zenek']
 print(sorted(tuple_names, reverse=True))  # ['Zenek', 'Tomek', 'Radek', 'Bartek']
+
+# rozpakowanie krotki
+a, b = 1, 2
+print(a, b)  # 1 2
+print(type((1, 2)))  # <class 'tuple'>
+print(a)
+print(b)
+
+# a, b = 1, 2, 3  # ValueError: too many values to unpack (expected 2)
+a, *b = 1, 2, 3  # * - worek na pozostałe dane
+print(a, b)  # 1 [2, 3]
+
+*a, b = 1, 2, 3
+print(a, b)  # [1, 2] 3
+# tupla_names - wypisac w róznych warinatach rozpakowanie do trzech zmiennych imie1, imie2, imie3
+
+imie1, imie2, *imie3 = tuple_names
+print(imie1, imie2, imie3)
+imie1, *imie2, imie3 = tuple_names
+print(imie1, imie2, imie3)
+*imie1, imie2, imie3 = tuple_names
+print(imie1, imie2, imie3)
+# Radek Tomek ['Zenek', 'Bartek']
+# Radek ['Tomek', 'Zenek'] Bartek
+# ['Radek', 'Tomek'] Zenek Bartek
+
+lista = list(tuple_names)  # rzutowanie krotki na listę
+print(lista)  # ['Radek', 'Tomek', 'Zenek', 'Bartek']
+print(type(lista))  # <class 'list'>
+print(len(tuple_names))  # długosc 4 elementy
