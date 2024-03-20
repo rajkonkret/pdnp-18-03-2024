@@ -15,6 +15,7 @@ dict_list = [
     {'name': 'tomek', 'branch': 'cot', 'year': '1', 'cgpa': '6'},
     {'name': 'zenek', 'branch': 'coy', 'year': '7', 'cgpa': '67.4'},
 ]
+print(dict_list[1]['year'])
 filename = 'records.csv'
 
 with open(filename, 'w') as csv_f:
