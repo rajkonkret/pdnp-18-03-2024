@@ -13,6 +13,7 @@ def bold_decorator(func):
 
     return wrapper
 
+
 @bold_decorator
 @uppercase_decorator
 def greeting():
