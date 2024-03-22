@@ -1,0 +1,66 @@
+{
+  "results": [
+    {
+      "gender": "male",
+      "name": {
+        "title": "Mr",
+        "first": "Haydar",
+        "last": "Puts"
+      },
+      "location": {
+        "street": {
+          "number": 3854,
+          "name": "Houtmankade"
+        },
+        "city": "Philippine",
+        "state": "Noord-Holland",
+        "country": "Netherlands",
+        "postcode": "3480 NM",
+        "coordinates": {
+          "latitude": "36.5837",
+          "longitude": "-2.7625"
+        },
+        "timezone": {
+          "offset": "+5:30",
+          "description": "Bombay, Calcutta, Madras, New Delhi"
+        }
+      },
+      "email": "haydar.puts@example.com",
+      "login": {
+        "uuid": "59b6caa4-156e-4fd1-88e5-b7d6b1083934",
+        "username": "tinygoose771",
+        "password": "klondike",
+        "salt": "etx49Yed",
+        "md5": "f982da78b438eb0043e70a78414eb6e2",
+        "sha1": "c23bcb4b25e1b46d994e8da57bbc907b2a9cf9fe",
+        "sha256": "ecaf9e363b2529953cd976316dbe45b75bcc7dd429d9ac32cea85ebe5195e797"
+      },
+      "dob": {
+        "date": "1970-11-27T06:31:13.842Z",
+        "age": 53
+      },
+      "registered": {
+        "date": "2018-11-14T08:51:33.301Z",
+        "age": 5
+      },
+      "phone": "(070) 0526226",
+      "cell": "(06) 71084178",
+      "id": {
+        "name": "BSN",
+        "value": "00973852"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/42.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/42.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/42.jpg"
+      },
+      "nat": "NL"
+    }
+  ],
+  "info": {
+    "seed": "5bbbe1848da960a9",
+    "results": 1,
+    "page": 1,
+    "version": "1.4"
+  }
+}
