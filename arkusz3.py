@@ -18,5 +18,5 @@ print(df)
 # 2  Python  15000      NaN       800
 # 3     PHP  18000  15 Days       500
 
-df.to_excel('Courses.xlsx')
+df.to_excel('Courses.xlsx')  # wymaga openpyxl do działania
 df.to_excel('Courses_no_index.xlsx', index=False)  # bez kolumny z indeksami
