@@ -1,4 +1,5 @@
 import pandas as pd
+import fun1
 
 df = pd.DataFrame(
     {"Osoba": ['Michał Jakub', 'Ewa Noga', "Krzysztof Zawierucha"],
@@ -23,3 +24,4 @@ print(df)
 # 2  Krzysztof Zawierucha   Zdany
 
 df.to_excel("wyniki.xlsx")
+# fun1.dodaj2(6, 7)
